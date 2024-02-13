@@ -7,22 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F8A3FC32B7A5B7700FF0EDC /* exampleCSV.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7F8A3FC22B7A5B7700FF0EDC /* exampleCSV.csv */; };
+		7F8A3FC62B7A5BB400FF0EDC /* CsvHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8A3FC52B7A5BB400FF0EDC /* CsvHelper.swift */; };
+		7F8A3FC82B7A8E5200FF0EDC /* ChartsColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8A3FC72B7A8E5200FF0EDC /* ChartsColor.swift */; };
 		7FA46D022B74F91900820A39 /* CsvReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA46D012B74F91900820A39 /* CsvReaderApp.swift */; };
 		7FA46D042B74F91900820A39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA46D032B74F91900820A39 /* ContentView.swift */; };
 		7FA46D062B74F91B00820A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FA46D052B74F91B00820A39 /* Assets.xcassets */; };
 		7FA46D092B74F91B00820A39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FA46D082B74F91B00820A39 /* Preview Assets.xcassets */; };
-		7FA46D0B2B74F91B00820A39 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA46D0A2B74F91B00820A39 /* Persistence.swift */; };
-		7FA46D0E2B74F91B00820A39 /* CsvReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FA46D0C2B74F91B00820A39 /* CsvReader.xcdatamodeld */; };
+		7FA46D692B77A06700820A39 /* HrCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA46D682B77A06700820A39 /* HrCount.swift */; };
+		7FA46D6C2B78C97600820A39 /* HrViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA46D6B2B78C97600820A39 /* HrViewModel.swift */; };
+		7FA46D6F2B78CA8200820A39 /* CounterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA46D6E2B78CA8200820A39 /* CounterDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F8A3FC22B7A5B7700FF0EDC /* exampleCSV.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = exampleCSV.csv; sourceTree = "<group>"; };
+		7F8A3FC52B7A5BB400FF0EDC /* CsvHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsvHelper.swift; sourceTree = "<group>"; };
+		7F8A3FC72B7A8E5200FF0EDC /* ChartsColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsColor.swift; sourceTree = "<group>"; };
 		7FA46CFE2B74F91900820A39 /* CsvReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CsvReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA46D012B74F91900820A39 /* CsvReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsvReaderApp.swift; sourceTree = "<group>"; };
 		7FA46D032B74F91900820A39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7FA46D052B74F91B00820A39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FA46D082B74F91B00820A39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7FA46D0A2B74F91B00820A39 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		7FA46D0D2B74F91B00820A39 /* CsvReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CsvReader.xcdatamodel; sourceTree = "<group>"; };
+		7FA46D682B77A06700820A39 /* HrCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrCount.swift; sourceTree = "<group>"; };
+		7FA46D6B2B78C97600820A39 /* HrViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrViewModel.swift; sourceTree = "<group>"; };
+		7FA46D6E2B78CA8200820A39 /* CounterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F8A3FC42B7A5B8E00FF0EDC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7F8A3FC52B7A5BB400FF0EDC /* CsvHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		7FA46CF52B74F91900820A39 = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +71,14 @@
 		7FA46D002B74F91900820A39 /* CsvReader */ = {
 			isa = PBXGroup;
 			children = (
+				7F8A3FC42B7A5B8E00FF0EDC /* Helper */,
+				7FA46D6D2B78CA3F00820A39 /* View */,
+				7FA46D6A2B78C91E00820A39 /* ViewModel */,
+				7FA46D672B779FD200820A39 /* Model */,
 				7FA46D012B74F91900820A39 /* CsvReaderApp.swift */,
 				7FA46D032B74F91900820A39 /* ContentView.swift */,
 				7FA46D052B74F91B00820A39 /* Assets.xcassets */,
-				7FA46D0A2B74F91B00820A39 /* Persistence.swift */,
-				7FA46D0C2B74F91B00820A39 /* CsvReader.xcdatamodeld */,
+				7F8A3FC22B7A5B7700FF0EDC /* exampleCSV.csv */,
 				7FA46D072B74F91B00820A39 /* Preview Content */,
 			);
 			path = CsvReader;
@@ -71,6 +90,31 @@
 				7FA46D082B74F91B00820A39 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7FA46D672B779FD200820A39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FA46D682B77A06700820A39 /* HrCount.swift */,
+				7F8A3FC72B7A8E5200FF0EDC /* ChartsColor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7FA46D6A2B78C91E00820A39 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7FA46D6B2B78C97600820A39 /* HrViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7FA46D6D2B78CA3F00820A39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FA46D6E2B78CA8200820A39 /* CounterDetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FA46D092B74F91B00820A39 /* Preview Assets.xcassets in Resources */,
+				7F8A3FC32B7A5B7700FF0EDC /* exampleCSV.csv in Resources */,
 				7FA46D062B74F91B00820A39 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,10 +188,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FA46D0B2B74F91B00820A39 /* Persistence.swift in Sources */,
-				7FA46D0E2B74F91B00820A39 /* CsvReader.xcdatamodeld in Sources */,
+				7FA46D692B77A06700820A39 /* HrCount.swift in Sources */,
+				7FA46D6F2B78CA8200820A39 /* CounterDetailView.swift in Sources */,
+				7FA46D6C2B78C97600820A39 /* HrViewModel.swift in Sources */,
 				7FA46D042B74F91900820A39 /* ContentView.swift in Sources */,
+				7F8A3FC62B7A5BB400FF0EDC /* CsvHelper.swift in Sources */,
 				7FA46D022B74F91900820A39 /* CsvReaderApp.swift in Sources */,
+				7F8A3FC82B7A8E5200FF0EDC /* ChartsColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,19 +400,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		7FA46D0C2B74F91B00820A39 /* CsvReader.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				7FA46D0D2B74F91B00820A39 /* CsvReader.xcdatamodel */,
-			);
-			currentVersion = 7FA46D0D2B74F91B00820A39 /* CsvReader.xcdatamodel */;
-			path = CsvReader.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 7FA46CF62B74F91900820A39 /* Project object */;
 }
