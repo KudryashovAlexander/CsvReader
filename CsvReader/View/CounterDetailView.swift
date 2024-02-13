@@ -121,7 +121,9 @@ struct CounterDetailView: View {
                 HStack {
                     Text("Название графика")
                     Spacer()
-                    TextField("Наименование", text: $chartName)
+                    TextField("Наименование", text: $chartName) {
+                        UIApplication.shared.endEditing()
+                    }
                         .multilineTextAlignment(.trailing)
                 }
             }
